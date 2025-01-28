@@ -19,9 +19,9 @@ const projects = [
     {
         id: 1,
         name: "Panadol",
-        description: "This is a detailed description of Project 1. It showcases my skills in Flutter and Dart.",
-        images: [
-            "assets/images/courses app/panadol.jpg",
+    description: "This is a detailed description of Project 1. It showcases my skills in Flutter and Dart.",
+        thumbnail: "assets/images/courses app/panadol.jpg",
+        images: [            
             "assets/images/courses app/img1.jpg",
             "assets/images/courses app/img2.jpg",
             "assets/images/courses app/img3.jpg",
@@ -40,8 +40,9 @@ const projects = [
     },
     {
         id: 2,
-        name: "News App",
-        description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
+      name: "News App",
+      thumbnail: "assets/images/cte news/cte.jpg",
+        description: "An application that publishes news through the admin. The news may contain a video or pictures with the ability to comment on it, and the admin can approve or reject the comment, with a notification when new news is published. There is a section for downloading files published by the admin himself, as well as links to sites published by the admin that open as a webview inside. The application or in an external application with the availability of social media and a statistics section that shows the number of people who liked and disliked the news and the number of users who accessed the news.",
         images: [
             "assets/images/cte news/img1.PNG",
             "assets/images/cte news/img2.PNG",
@@ -65,7 +66,8 @@ const projects = [
     },
     {
         id: 3,
-        name: "Employees App",
+      name: "Employees App",
+      thumbnail: "assets/images/employees app/img1.jpg",
         description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
         images: [
             "assets/images/employees app/img1.jpg",
@@ -84,7 +86,8 @@ const projects = [
     },
     {
         id: 4,
-        name: "Lost and Found",
+      name: "Lost and Found",
+      thumbnail: "assets/images/lost and found/lost and found.jpg",
         description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
         images: [
             "assets/images/lost and found/img1.jpg",
@@ -103,7 +106,8 @@ const projects = [
     },
     {
         id: 5,
-        name: "Studying App",
+      name: "Studying App",
+      thumbnail: "assets/images/studying_app/splash_image.png",
         description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
         images: [
             "assets/images/studying_app/img1.jpg",
@@ -126,7 +130,8 @@ const projects = [
     },
     {
         id: 6,
-        name: "Technical Solutions",
+      name: "Technical Solutions",
+      thumbnail: "assets/images/technical solutions/technical_solutions.jpg",
         description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
         images: [
             "assets/images/technical solutions/img1.jpg",
@@ -145,7 +150,8 @@ const projects = [
     {
         id: 7,
         name: "Utopia",
-        description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
+        thumbnail: "assets/images/Utopia/utopia.jpg",
+        description: "It is a charitable application: It consists of three sections Trade-in section: It is a special section for exchanging and exchanging tools, equipment, or anything that the user no longer needs and exchanges it for something else with another user, with the possibility of making the offered product sold directly by activating the direct selling option. Donation Section: The section for donating supplies that the user no longer needs and wants to help others, such as clothes, electrical appliances, and others. Utopia Community: The section on the needs facing the user or any problem he needs to solve in life in general or anything he needs and is unable to provide, in other words general help with anything or any problem with the possibility of hiding the identity of the requester. With a special section for messages between the author of the publication and the author of the request",
         images: [
             "assets/images/Utopia/img1.jpg",
             "assets/images/Utopia/img2.jpg",
@@ -157,7 +163,8 @@ const projects = [
     },
     {
         id: 8,
-        name: "Youtube playlist Player",
+      name: "Youtube playlist Player",
+      thumbnail: "assets/images/Youtube playlist Player/img1.jpg",
         description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
         images: [
             "assets/images/Youtube playlist Player/img1.jpg",
@@ -185,7 +192,7 @@ function generateProjectCards() {
       projectCard.dataset.projectId = project.id; // Store project ID for reference
   
       const projectImage = document.createElement('img');
-      projectImage.src = project.images[0]; // Use the first image as the thumbnail
+      projectImage.src = project.thumbnail; // Use the first image as the thumbnail
       projectImage.alt = project.name;
   
       const projectName = document.createElement('h3');

@@ -228,6 +228,7 @@ body {
 .slider-container {
   position: relative;
   max-width: 600px; /* Adjust the container width */  
+  max-height: 1100px; /* Adjust the container width */  
   margin: 0 auto;
   overflow: hidden;
 }
@@ -236,6 +237,8 @@ body {
 .project-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  
+  
 }
 
 /* Individual Images */
@@ -245,7 +248,9 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-shrink: 0; /* Prevent images from shrinking */
-  
+  max-width: 600px; /* Adjust the container width */  
+  max-height: 1100px; /* Adjust the container width */  
+    
 }
     
   /* Slider Buttons */
