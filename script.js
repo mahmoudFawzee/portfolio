@@ -16,10 +16,11 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 });
 
 const projects = [
+  //panadol
     {
         id: 1,
         name: "Panadol",
-    description: "This is a detailed description of Project 1. It showcases my skills in Flutter and Dart.",
+    description: "This app based on youtube playlists we get the playlist and generate videos in this playlist, anyone can create account on the app and start learning directly he also can take exams also his progress through the course saved.",
         thumbnail: "assets/images/courses app/panadol.jpg",
         images: [            
             "assets/images/courses app/img1.jpg",
@@ -38,7 +39,8 @@ const projects = [
             
         ]
     },
-    {
+  //cte news 
+  {
         id: 2,
       name: "News App",
       thumbnail: "assets/images/cte news/cte.jpg",
@@ -64,11 +66,12 @@ const projects = [
             
         ]
     },
-    {
+  //employee 
+  {
         id: 3,
       name: "Employees App",
       thumbnail: "assets/images/employees app/img1.jpg",
-        description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
+        description: "This app for who looking for work, i just work on the interfaces",
         images: [
             "assets/images/employees app/img1.jpg",
             "assets/images/employees app/img2.jpg",
@@ -84,11 +87,12 @@ const projects = [
             
         ]
     },
-    {
+  //Lost and found
+  {
         id: 4,
       name: "Lost and Found",
       thumbnail: "assets/images/lost and found/lost and found.jpg",
-        description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
+        description: "In this app, users can post a new post which contains the item they found and any one can view the post, and also there is an admin who has the control to accept the post published and it contains monthly statistics we can get as an excel file.",
         images: [
             "assets/images/lost and found/img1.jpg",
             "assets/images/lost and found/img2.jpg",
@@ -104,11 +108,12 @@ const projects = [
             
         ]
     },
-    {
+  //studying app
+  {
         id: 5,
       name: "Studying App",
       thumbnail: "assets/images/studying_app/splash_image.png",
-        description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
+        description: "An educational application for the education system in Tunisia, and you watch the video for each lesson and it displays the materials and presents the lessons, as well as quizzes for each lesson and a comprehensive quiz for the subject, like the quizzes for Udemy, and each lesson has its own video, and there is a chat section for each stage of study, and there is a part Save lessons and another part for news, with a group chat for each academic year, and notifications within the application in case the test date approaches.",
         images: [
             "assets/images/studying_app/img1.jpg",
             "assets/images/studying_app/img2.jpg",
@@ -127,12 +132,13 @@ const projects = [
             "assets/images/studying_app/img15.jpg",
             
         ]
-    },
+  },
+    //technical solutions
     {
         id: 6,
       name: "Technical Solutions",
       thumbnail: "assets/images/technical solutions/technical_solutions.jpg",
-        description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
+        description: "This app helps who need a technical advices about some topic like computers, mobiles, cars and programs setup and more, also user can looking for maintenance centers for his devices, user also can rate the maintenance center.",
         images: [
             "assets/images/technical solutions/img1.jpg",
             "assets/images/technical solutions/img2.jpg",
@@ -146,7 +152,8 @@ const projects = [
             "assets/images/technical solutions/img10.jpg",
             
         ]
-    },
+  },
+    //utopia
     {
         id: 7,
         name: "Utopia",
@@ -165,7 +172,7 @@ const projects = [
         id: 8,
       name: "Youtube playlist Player",
       thumbnail: "assets/images/Youtube playlist Player/img1.jpg",
-        description: "This is a detailed description of Project 2. It highlights my expertise in UI/UX design.",
+        description: "Just put a playlist url from youtube then enjoy watching videos.",
         images: [
             "assets/images/Youtube playlist Player/img1.jpg",
             "assets/images/Youtube playlist Player/img2.jpg",

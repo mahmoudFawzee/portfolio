@@ -117,7 +117,14 @@ body {
   button:hover {
     background-color: #3C3E54; /* Secondary Color (30%) */
   }
+  /* Full-page container */
+
+  /* Circular image container */
+ 
   
+
+  
+
  /* Projects Section */
 #projects {
     background-color: #F2F2F3; /* Primary Color (60%) */
@@ -163,7 +170,7 @@ body {
     font-size: 1.2rem;
   }
   /* Project name styling */
-
+  image
   /* Skills Section */
   #skills ul {
     list-style: none;
