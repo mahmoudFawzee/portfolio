@@ -94,11 +94,7 @@ body {
   #skills {
     background-color: #F2F2F3; /* Primary Color (60%) */
   }
-  
-  #contact {
-    background-color: #F2F2F3; /* Primary Color (60%) */
-  }
-  
+
   /* Buttons and Links */
   a {
     color: #DF5A56; /* Accent Color (10%) */
@@ -145,7 +141,12 @@ body {
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
   }
   
-  .project-card:hover {
+  .project-card:hover {  /* Contact Section */
+    #contact {
+      background-color: #F2F2F3; /* Primary Color (60%) */
+      padding: 2rem;
+      text-align: center;
+    }
     transform: translateY(-5px); /* Slight lift on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
   }
@@ -222,20 +223,57 @@ body {
     margin-bottom: 2rem;
   }
   
-  .project-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+ 
+  /* Slider Container */
+.slider-container {
+  position: relative;
+  max-width: 600px; /* Adjust the container width */  
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Project Images Container */
+.project-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Images */
+.project-images img {
+  width: 100%; /* Each image takes the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Prevent images from shrinking */
+  
+}
+    
+  /* Slider Buttons */
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(188, 121, 121);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10;
   }
   
-  .project-images img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .slider-button.prev {
+    left: 10px;
   }
   
+  .slider-button.next {
+    right: 10px;
+  }
+  
+  .slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
   /* Back Button */
   .back-button {
     display: inline-block;
@@ -251,3 +289,56 @@ body {
   .back-button:hover {
     background-color: #BBA87A; /* Secondary Color (30%) */
   }
+
+
+  /* Contact Section */
+#contact {
+  background-color: #F2F2F3; /* Primary Color (60%) */
+  padding: 2rem;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #333; /* Dark text for contrast */
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Social Links Container */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between links */
+  flex-wrap: wrap; /* Wrap links on smaller screens */
+}
+
+/* Individual Social Link */
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Dark text for contrast */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-link img {
+  width: 50px; /* Adjust icon size */
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.social-link span {
+  font-size: 1rem;
+  color: #333; /* Accent Color (10%) */
+  transition: color 0.3s;
+}
+
+/* Hover Effects */
+.social-link:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.social-link:hover span {
+  color: #BBA87A; /* Secondary Color (30%) on hover */
+}

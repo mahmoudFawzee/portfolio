@@ -201,36 +201,70 @@ function generateProjectCards() {
       projectCard.addEventListener('click', () => showProjectDetails(project.id));
     });
   }
-  
-  // Function to show project details
-  function showProjectDetails(projectId) {
-    const project = projects.find(p => p.id === projectId);
-    if (!project) return;
-  
-    // Update the project details section
-    document.getElementById('project-name').textContent = project.name;
-    document.getElementById('project-description').textContent = project.description;
-  
-    const projectImagesContainer = document.getElementById('project-images');
-    projectImagesContainer.innerHTML = ''; // Clear previous images
-  
-    project.images.forEach(image => {
-      const img = document.createElement('img');
-      img.src = image;
-      img.alt = project.name;
-      projectImagesContainer.appendChild(img);
-    });
-  
-    // Show the project details section and hide the projects section
-    document.getElementById('projects').style.display = 'none';
-    document.getElementById('project-details').style.display = 'block';
-  }
-  
-  // Function to go back to the projects section
-  document.querySelector('.back-button').addEventListener('click', () => {
-    document.getElementById('projects').style.display = 'block';
-    document.getElementById('project-details').style.display = 'none';
+  // script.js
+// script.js
+
+let currentIndex = 0; // Track the current image index
+let currentProjectId = null; // Track the current project ID
+
+// Function to show project details
+function showProjectDetails(projectId) {
+  const project = projects.find(p => p.id === projectId);
+  if (!project) return;
+
+  // Update the project details section
+  document.getElementById('project-name').textContent = project.name;
+  document.getElementById('project-description').textContent = project.description;
+
+  const projectImagesContainer = document.getElementById('project-images');
+  projectImagesContainer.innerHTML = ''; // Clear previous images
+
+  project.images.forEach(image => {
+    const img = document.createElement('img');
+    img.src = image;
+    img.alt = project.name;
+    projectImagesContainer.appendChild(img);
   });
-  
-  // Generate project cards when the page loads
+
+  // Reset slider index
+  currentIndex = 0;
+  currentProjectId = projectId; // Set the current project ID
+  updateSlider();
+
+  // Show the project details section and hide the projects section
+  document.getElementById('projects').style.display = 'none';
+  document.getElementById('project-details').style.display = 'block';
+}
+
+// Function to update the slider position
+function updateSlider() {
+  const projectImagesContainer = document.getElementById('project-images');
+  const offset = -currentIndex * 100; // Move by 100% of the container width
+  projectImagesContainer.style.transform = `translateX(${offset}%)`;
+}
+
+// Slider navigation
+document.querySelector('.slider-button.next').addEventListener('click', () => {
+  const project = projects.find(p => p.id === currentProjectId);
+  if (currentIndex < project.images.length - 1) {
+    currentIndex++;
+    updateSlider();
+  }
+});
+
+document.querySelector('.slider-button.prev').addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateSlider();
+  }
+});
+
+// Function to go back to the projects section
+document.querySelector('.back-button').addEventListener('click', (e) => {
+  e.preventDefault(); // Prevent default link behavior
+  document.getElementById('projects').style.display = 'block';
+  document.getElementById('project-details').style.display = 'none';
+});
+
+// Generate project cards when the page loads
 window.onload = generateProjectCards;

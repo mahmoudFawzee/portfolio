@@ -44,13 +44,17 @@
     </div>
   </section>
   
-  <!-- Project Details Section (Hidden by default) -->
-  <section id="project-details" style="display: none;">
+ <!-- Project Details Section (Hidden by default) -->
+<section id="project-details" style="display: none;">
     <a href="#projects" class="back-button">← Back to Projects</a>
     <div class="project-details-content">
       <h1 id="project-name"></h1>
       <p id="project-description"></p>
-      <div id="project-images" class="project-images"></div>
+      <div class="slider-container">
+        <div id="project-images" class="project-images"></div>
+        <button class="slider-button prev">&#10094;</button> <!-- Left arrow -->
+        <button class="slider-button next">&#10095;</button> <!-- Right arrow -->
+      </div>
     </div>
   </section>
   <!-- Skills Section -->
@@ -67,12 +71,30 @@
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Me</h2>
     <form id="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+        <h2>Contact Me</h2>
+    <div class="social-links">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/+201002998596" target="_blank" class="social-link">
+        <img src="assets/icons/whatsapp.png" alt="WhatsApp">
+        <span>WhatsApp</span>
+      </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/mahmoud.fawzee.7" target="_blank" class="social-link">
+        <img src="assets/icons/facebook.png" alt="Facebook">
+        <span>Facebook</span>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/mahmoud-fawzee-08b196225" target="_blank" class="social-link">
+        <img src="assets/icons/linkedin.png" alt="LinkedIn">
+        <span>LinkedIn</span>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/mahmoudFawzee" target="_blank" class="social-link">
+        <img src="assets/icons/github.png" alt="GitHub">
+        <span>GitHub</span>
+      </a>
+    </div>
     </form>
   </section>
 
