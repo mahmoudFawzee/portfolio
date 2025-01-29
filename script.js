@@ -64,12 +64,12 @@ const projects = [
             "assets/images/cte news/img7.PNG",
             "assets/images/cte news/img8.PNG",
             "assets/images/cte news/img9.PNG",
-            "assets/images/cte news/img10.PNG",
-            "assets/images/cte news/img11.PNG",
-            "assets/images/cte news/img12.PNG",
-            "assets/images/cte news/img13.PNG",
-            "assets/images/cte news/img14.PNG",
-            "assets/images/cte news/img15.PNG",
+            "assets/images/cte news/img10.jpg",
+            "assets/images/cte news/img11.jpg",
+            "assets/images/cte news/img12.jpg",
+            "assets/images/cte news/img13.jpg",
+            "assets/images/cte news/img14.jpg",
+            "assets/images/cte news/img15.jpg",
             "assets/images/cte news/img16.PNG",
             "assets/images/cte news/img17.PNG",
             
@@ -137,8 +137,7 @@ const projects = [
             "assets/images/studying_app/img11.jpg",
             "assets/images/studying_app/img12.jpg",
             "assets/images/studying_app/img13.jpg",
-            "assets/images/studying_app/img14.jpg",
-            "assets/images/studying_app/img15.jpg",
+            "assets/images/studying_app/img14.jpg",            
             
         ]
   },
