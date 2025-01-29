@@ -15,6 +15,15 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     this.reset();
 });
 
+//cv download
+function downloadPDF() {
+  const link = document.createElement("a");
+  link.href = "assets/files/Mahmoud-Fawzee-flutter-developer-CV.pdf"; // PDF file path
+  link.download = "Mahmoud-Fawzee-flutter-developer-CV.pdf"; // Default download name
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 const projects = [
   //panadol
     {
