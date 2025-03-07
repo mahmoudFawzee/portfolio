@@ -178,18 +178,16 @@ const projects = [
     },
     {
         id: 8,
-      name: "Youtube playlist Player",
-      thumbnail: "assets/images/Youtube playlist Player/img1.jpg",
-        description: "Just put a playlist url from youtube then enjoy watching videos.",
+      name: "Ai Assistant",
+      thumbnail: "assets/images/ai assistant/icon.png",
+        description: 'the all-in-one personal assistant designed to help you stay productive and informed throughout your day. Whether you need to manage tasks, get real-time weather updates, or chat with an AI assistant, this app has you covered.  ',
         images: [
-            "assets/images/Youtube playlist Player/img1.jpg",
-            "assets/images/Youtube playlist Player/img2.jpg",
-            "assets/images/Youtube playlist Player/img3.jpg",
-            "assets/images/Youtube playlist Player/img4.jpg",
-            "assets/images/Youtube playlist Player/img5.jpg",
-            "assets/images/Youtube playlist Player/img6.jpg",
-            "assets/images/Youtube playlist Player/img7.jpg",
-            
+            "assets/images/ai assistant/img1.jpg",
+            "assets/images/ai assistant/img2.jpg",
+            "assets/images/ai assistant/img3.jpg",
+            "assets/images/ai assistant/img4.jpg",
+            "assets/images/ai assistant/img5.jpg",
+            "assets/images/ai assistant/img6.jpg",
         ]
     },
     // Add more projects here
