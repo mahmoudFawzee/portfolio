@@ -3,20 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Details - Your Name</title>
+  <title>Project Details - Mahmoud Fawzy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Back Button -->
-  <a href="index.html" class="back-button">← Back to Projects</a>
 
-  <!-- Project Details -->
   <div class="project-details">
-    <h1 id="project-name"></h1>
+    <div class="project-header">
+      <h1 id="project-name"></h1>
+      <div id="project-links-container">
+          <a id="github-link" href="#" target="_blank" class="project-button" title="View on GitHub">
+              <img src="assets/icons/github.png" alt="">
+          </a>
+          <a id="youtube-link" href="#" target="_blank" class="project-button" title="Watch on YouTube">
+            <img src="assets/icons/youtube.png" alt="">
+          </a>
+          <a id="google-play-link" href="#" target="_blank" class="project-button" title="Download on Google Play">
+            <img src="assets/icons/google-play.png" alt="">
+          </a>
+          <a id="app-store-link" href="#" target="_blank" class="project-button" title="View on App Store">
+            <img src="assets/icons/app-store.png" alt="">
+          </a>
+      </div>
+  </div>
+  
+  
     <p id="project-description"></p>
-    <div id="project-images" class="project-images"></div>
+
+    <!-- Technologies Used Section -->
+    <div id="project-technologies">
+      <h3>Technologies Used</h3>
+      <ul></ul>
+    </div>
+
+    <!-- Image Slider -->
+    <div class="slider-container">
+        <div id="project-images" class="project-images"></div>
+        <button class="slider-button prev">&#10094;</button>
+        <button class="slider-button next">&#10095;</button>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  <script type="module" src="./modules/projects.js"></script>
+  <script type="module" src="./modules/script.js"></script>
 </body>
 </html>

@@ -1,4 +1,19 @@
-  @media (max-width: 768px) {
+
+
+/* Swipe Effect for Mobile */
+@media (max-width: 600px) {
+  .slider-container {
+      max-width: 90%; /* Adjust width for small screens */
+      height: auto;
+  }
+
+  .project-images img {
+      width: 100%; /* Make images responsive */
+      height: auto;
+  }
+}
+
+@media (max-width: 768px) {
     nav {
       flex-direction: column;
       align-items: flex-start;
@@ -123,9 +138,7 @@ body {
 #contact-form{
   margin-top: 0;
 }
-.social-link{
-  margin-top: 0;
-}
+
   /* Circular image container */
  
   .profile-image {
@@ -224,62 +237,6 @@ body {
     margin-bottom: 2rem;
   }
   
- 
-  /* Slider Container */
-.slider-container {
-  position: relative;
-  max-width: 600px; /* Adjust the container width */  
-  max-height: 1100px; /* Adjust the container width */  
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-/* Project Images Container */
-.project-images {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  
-  
-}
-
-/* Individual Images */
-.project-images img {
-  width: 100%; /* Each image takes the full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0; /* Prevent images from shrinking */
-  max-width: 600px; /* Adjust the container width */  
-  max-height: 1100px; /* Adjust the container width */  
-    
-}
-    
-  /* Slider Buttons */
-  .slider-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgb(188, 121, 121);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 18px;
-    z-index: 10;
-  }
-  
-  .slider-button.prev {
-    left: 10px;
-  }
-  
-  .slider-button.next {
-    right: 10px;
-  }
-  
-  .slider-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
   /* Back Button */
   .back-button {
     display: inline-block;
@@ -347,4 +304,156 @@ body {
 
 .social-link:hover span {
   color: #BBA87A; /* Secondary Color (30%) on hover */
+}
+/* Center project details and improve readability */
+.project-details {
+  text-align: center;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styled project description */
+#project-description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Technologies Used Section */
+#project-technologies {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#project-technologies h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#project-technologies ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#project-technologies li {
+  background: #DF5A56;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Adjusted Slider Container */
+.slider-container {
+  position: relative;
+  width: 400px; /* Set exact width */
+  height: 850px; /* Set exact height */
+  margin: 20px auto;
+  overflow: hidden; /* Hides overflowing images */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Images Wrapper */
+.project-images {
+  display: flex;
+  width: 100%; 
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Images */
+.project-images img {
+  width: 100%; /* Ensures each image takes full width */
+  height: 100%; /* Ensures each image takes full height */
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+
+/* Slider Buttons */
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+.slider-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+/* Project Header - Aligns Title & Buttons */
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Title on left, buttons on right */
+  margin-bottom: 15px;
+}
+
+/* Project Title */
+#project-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Project Links Container */
+#project-links-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.project-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Fixed size */
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.5rem; /* Make icons larger */
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+  margin: 0px;
+}
+/* Hover Effect */
+.project-button:hover {
+  transform: translateY(-3px);
+}
+
+
+
+
+.project-button img {
+  width: 40px; /* Adjust icon size */
+  height: 40px;
+  margin-bottom: 0.5rem;
 }
