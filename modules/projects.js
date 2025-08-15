@@ -2,16 +2,16 @@
 import { oop, algorithms, dataStructure, sqflite, flutter, firebase, dart, designPatterns, git, gitHup, bloc, apis, solid } from "./script.js";
 
 const projects = [
-  //panadol
+  //Ahafaq
   {
     id: 1,
     name: "Ahafaq",
-    technologies: [flutter, firebase, apis, bloc, dart, oop, git, gitHup, designPatterns],
+    technologies: [flutter,apis, bloc, dart, oop, git,solid, gitHup, designPatterns],
     githubLink: "",
     youtubeLink: "",
     googlePlayLink: "",
     appStoreLink: "https://apps.apple.com/us/app/ashafaq/id6748883105",
-    description: `Al Shafaq Car Wash – Mobile Application \n
+    description: `Al Shafaq Car Wash – Mobile Application
 
 \nAbout the App:
 \nAl Shafaq Car Wash is a Saudi brand, providing professional mobile car wash services with a focus on premium quality, convenience, and customer satisfaction. The app allows customers to book a car wash service directly to their home or workplace.
